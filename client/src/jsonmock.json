@@ -1,0 +1,88 @@
+{
+  "trails": [
+    {
+      "id": "1",
+      "createdAt": "2018-12-03T11:37:42.015Z",
+      "name": "Lorem ipsum dolorssssssssssssss ss s sdasdas a sd asd as dasdasd asdasdasdasd  s",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jagan123/128.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut luctus massa. Ut facilisis sed lacus id molestie.",
+      "difficulty": "Hard",
+      "city": "Cobourg",
+      "province": "Ontario",
+      "googleLink": "google.com",
+      "trailheadAddress": "123 fake Street"
+    },
+    {
+      "id": "2",
+      "createdAt": "2018-12-03T11:37:42.015Z",
+      "name": "Lorem ipsum dolor",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jagan123/128.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut luctus massa. Ut facilisis sed lacus id molestie.",
+      "difficulty": "Hard",
+      "city": "Cobourg",
+      "province": "Ontario",
+      "googleLink": "google.com",
+      "trailheadAddress": "123 fake Street"
+    },
+    {
+      "id": "3",
+      "createdAt": "2018-12-03T11:37:42.015Z",
+      "name": "Lorem ipsum dolor",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jagan123/128.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut luctus massa. Ut facilisis sed lacus id molestie.",
+      "difficulty": "Hard",
+      "city": "Cobourg",
+      "province": "Ontario",
+      "googleLink": "google.com",
+      "trailheadAddress": "123 fake Street"
+    },
+    {
+      "id": "4",
+      "createdAt": "2018-12-03T11:37:42.015Z",
+      "name": "Lorem ipsum dolor",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jagan123/128.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut luctus massa. Ut facilisis sed lacus id molestie.",
+      "difficulty": "Hard",
+      "city": "Cobourg",
+      "province": "Ontario",
+      "googleLink": "google.com",
+      "trailheadAddress": "123 fake Street"
+    },
+    {
+      "id": "5",
+      "createdAt": "2018-12-03T11:37:42.015Z",
+      "name": "Lorem ipsum dolor",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jagan123/128.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut luctus massa. Ut facilisis sed lacus id molestie.",
+      "difficulty": "Hard",
+      "city": "Cobourg",
+      "province": "Ontario",
+      "googleLink": "google.com",
+      "trailheadAddress": "123 fake Street"
+    },
+    {
+      "id": "6",
+      "createdAt": "2018-12-03T11:37:42.015Z",
+      "name": "Lorem ipsum dolor",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jagan123/128.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut luctus massa. Ut facilisis sed lacus id molestie.",
+      "difficulty": "Hard",
+      "city": "Cobourg",
+      "province": "Ontario",
+      "googleLink": "google.com",
+      "trailheadAddress": "123 fake Street"
+    },
+    {
+      "id": "7",
+      "createdAt": "2018-12-03T11:37:42.015Z",
+      "name": "Lorem ipsum dolor",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jagan123/128.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut luctus massa. Ut facilisis sed lacus id molestie.",
+      "difficulty": "Hard",
+      "city": "Cobourg",
+      "province": "Ontario",
+      "googleLink": "google.com",
+      "trailheadAddress": "123 fake Street"
+    }
+  ]
+}
