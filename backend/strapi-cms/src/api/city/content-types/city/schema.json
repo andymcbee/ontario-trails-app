@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "trails",
+  "collectionName": "cities",
   "info": {
-    "singularName": "trail",
-    "pluralName": "trails",
-    "displayName": "Trail",
+    "singularName": "city",
+    "pluralName": "cities",
+    "displayName": "City",
     "description": ""
   },
   "options": {
@@ -16,13 +16,10 @@
       "type": "string",
       "required": true
     },
-    "city": {
+    "state": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::city.city"
-    },
-    "LengthInKm": {
-      "type": "decimal"
+      "target": "api::state.state"
     },
     "country": {
       "type": "relation",
@@ -33,11 +30,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::region.region"
-    },
-    "state": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::state.state"
     }
   }
 }
