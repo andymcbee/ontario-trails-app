@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string",
-      "required": true
-    },
     "state": {
       "type": "relation",
       "relation": "oneToOne",
@@ -26,10 +22,9 @@
       "relation": "oneToOne",
       "target": "api::country.country"
     },
-    "region": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::region.region"
+    "name": {
+      "type": "string",
+      "required": true
     }
   }
 }

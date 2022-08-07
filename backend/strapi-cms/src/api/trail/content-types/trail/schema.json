@@ -12,32 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string",
-      "required": true
-    },
     "city": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::city.city"
-    },
-    "LengthInKm": {
-      "type": "decimal"
     },
     "country": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::country.country"
     },
-    "region": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::region.region"
-    },
     "state": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::state.state"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string",
+      "required": true
     }
   }
 }

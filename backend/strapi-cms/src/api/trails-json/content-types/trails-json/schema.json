@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trails_jsons",
+  "info": {
+    "singularName": "trails-json",
+    "pluralName": "trails-jsons",
+    "displayName": "trails-json",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trailsdata": {
+      "type": "json"
+    },
+    "processingComplete": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

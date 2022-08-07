@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "processing_errors",
+  "info": {
+    "singularName": "processing-error",
+    "pluralName": "processing-errors",
+    "displayName": "processingError"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "jsonData": {
+      "type": "json"
+    },
+    "resolved": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

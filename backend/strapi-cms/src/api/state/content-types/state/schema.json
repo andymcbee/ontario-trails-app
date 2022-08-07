@@ -12,14 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string",
-      "required": true
-    },
     "country": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::country.country"
+    },
+    "name": {
+      "type": "string",
+      "required": true
     }
   }
 }
