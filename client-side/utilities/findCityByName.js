@@ -9,15 +9,15 @@ const findCityByName = async (cityNameString) => {
     );
 
     if (data.data.length === 1) {
-      console.log(`COUNT IS ONE FOR CITY:${data.data[0].attributes.name}`);
+      //    console.log(`COUNT IS ONE FOR CITY:${cityNameString}`);
 
       return { data: { city: data.data[0], confidentMatch: true } };
     } else {
-      console.log(
-        "MORE THAN ONE OR MISSING CITY PRESENT. FIGURE THIS LOGIC OUT LATER. ZERO ISNT GOOD, MORE THAN 1 ISNT GOOD."
-      );
       return {
-        data: { cityId: "No confident match found.", confidentMatch: false },
+        data: {
+          cityId: `No confident match found ${cityNameString}`,
+          confidentMatch: false,
+        },
       };
     }
   } catch (error) {

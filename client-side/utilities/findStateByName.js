@@ -7,15 +7,15 @@ const findStateByName = async (stateNameString) => {
     );
 
     if (data.data.length === 1) {
-      console.log(`COUNT IS ONE FOR STATE:${data.data[0].attributes.name}`);
+      //  console.log(`COUNT IS ONE FOR STATE:${stateNameString}`);
 
       return { data: { state: data.data[0], confidentMatch: true } };
     } else {
-      console.log(
-        "MORE THAN ONE OR MISSING STATE PRESENT. FIGURE THIS LOGIC OUT LATER. ZERO ISNT GOOD, MORE THAN 1 ISNT GOOD."
-      );
       return {
-        data: { stateId: "No confident match found.", confidentMatch: false },
+        data: {
+          stateId: `No confident match found for ${stateNameString}`,
+          confidentMatch: false,
+        },
       };
     }
   } catch (error) {
