@@ -1,31 +1,172 @@
 [
     {
-        "trailData": {
-            "name": "3 Park Loop",
-            "country": "Canada",
-            "state": "Ontario",
-            "city": "Cobourg"
-
-        }
+      "Name": "Aaron Creek",
+      "Province": 1,
+      "Country": 1
     },
-
     {
-        "trailData": {
-            "name": "A-frame Trail & Marshlandside Trail - Nordic Inn",
-            "country": "Canada",
-            "state": "Ontario",
-            "city": "Cobourg"
-
-        }      },
-      {
-        "trailData": {
-            "name": "York Mills Park Trail",
-            "country": "Canada",
-            "state": "Ontario",
-            "city": "Cobourg"
-
-        }      }
-     ]
-
-
-
+      "Name": "Actinolite",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Acton",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Ajax",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Alcona",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Aldershot",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Alexandria",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Alfred",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Alliston",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Almonte",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Alvinston",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Amherstburg",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Amherstview",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Ancaster",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Andrewsville",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Angus",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Anten Mills",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Apsley",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Arkona",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Arnprior",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Arthur",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Atikokan",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Auburn",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Aurora",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Aylmer",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Bala",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Ballyduff",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Bancroft",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Barrie",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Barry's Bay",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Batchawana Bay",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Bath",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Battawa",
+      "Province": 1,
+      "Country": 1
+    },
+    {
+      "Name": "Bayview",
+      "Province": 1,
+      "Country": 1
+    }
+  ]

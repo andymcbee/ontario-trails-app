@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cities_jsons",
+  "info": {
+    "singularName": "cities-json",
+    "pluralName": "cities-jsons",
+    "displayName": "cities-json",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "json": {
+      "type": "json"
+    },
+    "processingComplete": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

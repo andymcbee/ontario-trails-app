@@ -2,6 +2,7 @@ import axios from "axios";
 import findCountryByName from "../utilities/findCountryByName";
 import findStateByName from "../utilities/findStateByName";
 import findCityByName from "../utilities/findCityByName";
+import findTrailByName from "../utilities/findTrailByName";
 
 const validateTrailSubmission = async (trailData) => {
   console.log("IN VALIDATE FUNC:::");
@@ -11,38 +12,38 @@ const validateTrailSubmission = async (trailData) => {
 
   const { city, state, country, name } = trailData;
 
-  console.log(city);
+  // console.log(city);
 
   const countryData = await findCountryByName(country);
-  console.log("AFTER COUNTRY");
+  //console.log("AFTER COUNTRY");
   /*   console.log("Country data");
   console.log(countryData.data.confidentMatch); */
 
   const stateData = await findStateByName(state);
-  console.log("AFTER STATE");
+  //console.log("AFTER STATE");
 
   /*   console.log("State data");
   console.log(stateData); */
   const cityData = await findCityByName(city);
-  console.log(cityData);
-  console.log("AFTER CITY");
+  //console.log(cityData);
+  // console.log("AFTER CITY");
 
   /*   console.log("City data");
   console.log(cityData); */
 
-  //check to see that the trail name is unique in the city. Break this into a direct SQL
-  //query later. Strapi doesn't allow deep nesting with multiple fields.
-
-  //fetch all trails where city = city(from DB spelling)
-  //then filter that array for all items that have the same name
-  //then check to see if the length of the array is zero.
-
-  const fetchTrailsFromCity = async () => {};
+  //I need to clean this up. The naming convention from the first approach didn't
+  //carry over well. change it to come from the perspective of
+  //searching for a unique name
+  //Also - need to add a CITY filter. Right now it checks global name match.
+  const trailCheckData = await findTrailByName(name);
+  console.log("CHECKING THE TRAIL :::::::::::::::::@@@@@@@@@@@");
+  console.log(trailCheckData);
 
   if (
     countryData.data.confidentMatch &&
     stateData.data.confidentMatch &&
-    cityData.data.confidentMatch
+    cityData.data.confidentMatch &&
+    trailCheckData.data.unique
   ) {
     const validatedTrailData = {
       name,
