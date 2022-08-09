@@ -35,7 +35,7 @@ function Home() {
         `http://localhost:1337/api/trails?pagination[page]=${pageNum}&pagination[pageSize]=${pageSize}&populate=%2A`
       );
       setTrailsApiData(data);
-      console.log(data);
+      //     console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -65,6 +65,8 @@ function Home() {
  */
   const trailsToShow = trailsApiData.data?.map((trail) => {
     let chipColor;
+
+    // console.log(trail);
     //determine chip color
     if (trail.attributes.Difficulty === "Easy") {
       chipColor = "green";

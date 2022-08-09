@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function Pagination({ handleClickBack, handleClickNext, paginationData }) {
-  console.log(paginationData.pagination);
+  //  console.log(paginationData.pagination);
   const { page, pageSize, pageCount, total } = paginationData?.pagination;
 
   const [firstItemNum, setFirstItemNum] = useState(0);

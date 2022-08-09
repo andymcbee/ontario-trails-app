@@ -2,29 +2,30 @@ import React, { useState } from "react";
 import image from "../assets/pexels-photo-142497.jpeg";
 import ChipWithColorOption from "./ChipWithColorOption";
 import Image from "next/image";
+import Link from "next/link";
 
 function CardWithButtonAndImage({ data, chipColor }) {
-  const { Name, LengthInKm } = data.attributes;
+  const { name, slug } = data.attributes;
+  console.log(name);
+
+  console.log(data);
 
   const cityData = {
-    name: data.attributes.city.data.attributes.Name,
+    name: data.attributes.city.data.attributes.name,
     id: data.attributes.city.data.id,
   };
 
   const countryData = {
-    name: data.attributes.country.data.attributes.Name,
+    name: data.attributes.country.data.attributes.name,
     id: data.attributes.country.data.id,
   };
 
   const stateData = {
-    name: data.attributes.state.data.attributes.Name,
+    name: data.attributes.state.data.attributes.name,
     id: data.attributes.state.data.id,
   };
 
-  const regionData = {
-    name: data.attributes.region.data.attributes.Name,
-    id: data.attributes.region.data.id,
-  };
+  const trailLink = "/";
 
   //console.log(cityData);
 
@@ -46,20 +47,23 @@ function CardWithButtonAndImage({ data, chipColor }) {
       <Image className="rounded-t-lg" src={image} alt="" />
 
       <div className="p-5">
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {chipColor ? (
+        <div className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <p>temp</p>
+          {/* {chipColor ? (
             <ChipWithColorOption chipText={LengthInKm} chipColor={chipColor} />
           ) : (
             <ChipWithColorOption chipText={LengthInKm} />
-          )}
-        </p>
+          )} */}
+        </div>
 
         <p className="mb-2 min-h-[50px] font-bold tracking-tight text-gray-900 dark:text-white">
-          {Name}
+          {name}
         </p>
 
         <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">
-          {`Length: ${LengthInKm} km`}
+          <Link href={`/${stateData.name.toLowerCase()}/${slug.toLowerCase()}`}>
+            <a>Visit this trail page</a>
+          </Link>
         </p>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {`${cityData.name} ${stateData.name} ${countryData.name} `}

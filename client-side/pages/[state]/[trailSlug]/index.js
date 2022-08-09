@@ -1,13 +1,10 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import fetchAllTrails from "../../../utilities/fetchAllTrails";
 import axios from "axios";
 
 const article = ({ trail }) => {
   console.log(trail);
   //console.log(article);
-  const router = useRouter();
-  const { id, id2 } = router.query;
   return (
     <>
       <div>this is an article number {trail.id}</div>
