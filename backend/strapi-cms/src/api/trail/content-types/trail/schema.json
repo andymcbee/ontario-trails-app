@@ -33,6 +33,27 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "website": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "googleReviewAvg": {
+      "type": "decimal"
+    },
+    "googleReviewCount": {
+      "type": "integer"
+    },
+    "googleMapsLink": {
+      "type": "string"
     }
   }
 }

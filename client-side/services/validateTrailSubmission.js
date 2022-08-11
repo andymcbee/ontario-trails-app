@@ -10,7 +10,19 @@ const validateTrailSubmission = async (trailData) => {
   /* console.log("VALIDATE TRIGGERED:::::::::");
   console.log(trailData); */
 
-  const { city, state, country, name } = trailData;
+  const {
+    city,
+    state,
+    country,
+    name,
+    website,
+    category,
+    address,
+    zip,
+    googleReviewAvg,
+    googleReviewCount,
+    googleMapsLink,
+  } = trailData;
 
   // console.log(city);
 
@@ -50,6 +62,13 @@ const validateTrailSubmission = async (trailData) => {
       cityId: cityData.data.city.id,
       stateId: stateData.data.state.id,
       countryId: countryData.data.country.id,
+      website,
+      category,
+      address,
+      zip,
+      googleReviewAvg,
+      googleReviewCount,
+      googleMapsLink,
     };
     /*     console.log("VALID TRAIL DATA... WITH TRAIL NAME AND ALL LOC IDS");
     console.log(validatedTrailData); */

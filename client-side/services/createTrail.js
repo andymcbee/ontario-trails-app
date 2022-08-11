@@ -3,6 +3,8 @@ import urlifyString from "../utilities/urlifyString";
 import trailUpdateSlug from "./trailUpdateSlug";
 
 const createTrail = async (trailData) => {
+  console.log("TRAIL DATA:::::::::::");
+  console.log(trailData);
   /*   console.log(trailData);
   console.log(trailData.name);
 
@@ -36,6 +38,13 @@ const createTrail = async (trailData) => {
         country: trailData.countryId,
         state: trailData.stateId,
         city: trailData.cityId,
+        website: trailData.website,
+        category: trailData.category,
+        address: trailData.address,
+        zip: trailData.zip,
+        googleReviewAvg: trailData.googleReviewAvg,
+        googleReviewCount: trailData.googleReviewCount,
+        googleMapsLink: trailData.googleMapsLink,
       },
     });
     console.log("AFTER THE AXIOS POST::::::::");

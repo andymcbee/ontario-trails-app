@@ -11,19 +11,19 @@ function ChipWithColorOption({ chipText, chipColor }) {
 
   //yellow:           "text-yellow-700 bg-yellow-100 border border-yellow-300"
 
-  /* let colorForChip =
+  let colorForChip =
     chipColor === "red" || chipColor === "yellow" || chipColor === "green"
       ? `text-${chipColor}-700 bg-${chipColor}-100 border border-${chipColor}-300`
-      : `text-${defaultColorForChip}-700 bg-${defaultColorForChip}-100 border border-${defaultColorForChip}-300`; */
+      : `text-${defaultColorForChip}-700 bg-${defaultColorForChip}-100 border border-${defaultColorForChip}-300`;
   return (
     <div className="flex">
-      {/* <div
+      <div
         className={`flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-full ${colorForChip}`}
       >
         <div className="text-xs font-normal leading-none flex-initial">
           {chipText}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

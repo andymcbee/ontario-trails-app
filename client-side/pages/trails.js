@@ -7,8 +7,14 @@ import findTrailBySlug from "../utilities/findTrailBySlug";
 import findOneCityBatchJsonToBeProcessed from "../utilities/findOneCityBatchJsonToBeProcessed";
 import createCity from "../services/createCity";
 import findCityByName from "../utilities/findCityByName";
-
+import fetchAllTrails from "../utilities/fetchAllTrails";
 const trails = () => {
+  const fetchAllTrailsFunc = async () => {
+    console.log("click");
+    const data = await fetchAllTrails();
+    console.log(data);
+  };
+
   const handleCreateCities = async () => {
     console.log("Click");
 
@@ -105,10 +111,11 @@ const trails = () => {
 
   return (
     <div>
-      {/*    <button onClick={handleCreateCities}>Create New Cities</button> */}
+      <button onClick={fetchAllTrailsFunc}>Fetch all trails</button>
+      {/*  <button onClick={handleCreateCities}>Create New Cities</button>*/}
 
       {/*  <button onClick={handleGetSlugClick}>Click</button>*/}
-      <button onClick={handleClickProcessData}> Create new trails</button>
+      {/*    <button onClick={handleClickProcessData}> Create new trails</button>*/}
 
       {/*  <button onClick={triggerUrlify}>Click TO TEST SLUGIFY</button>*/}
     </div>

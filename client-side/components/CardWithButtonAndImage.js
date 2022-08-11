@@ -3,6 +3,7 @@ import image from "../assets/pexels-photo-142497.jpeg";
 import ChipWithColorOption from "./ChipWithColorOption";
 import Image from "next/image";
 import Link from "next/link";
+import Button1 from "./Button1";
 
 function CardWithButtonAndImage({ data, chipColor }) {
   const { name, slug } = data.attributes;
@@ -61,9 +62,14 @@ function CardWithButtonAndImage({ data, chipColor }) {
         </p>
 
         <p className="mb-1 font-normal text-gray-700 dark:text-gray-400">
-          <Link href={`/${stateData.name.toLowerCase()}/${slug.toLowerCase()}`}>
+          {/*       <Link href={`/${stateData.name.toLowerCase()}/${slug.toLowerCase()}`}>
             <a>Visit this trail page</a>
-          </Link>
+          </Link> */}
+          <Button1
+            buttonText="Click to visit"
+            buttonLink={`/${stateData.name.toLowerCase()}/${slug.toLowerCase()}`.toString()}
+            passHref={false}
+          />
         </p>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {`${cityData.name} ${stateData.name} ${countryData.name} `}
@@ -93,3 +99,5 @@ function CardWithButtonAndImage({ data, chipColor }) {
 }
 
 export default CardWithButtonAndImage;
+
+//{`/${stateData.name.toLowerCase()}/${slug.toLowerCase()}`}

@@ -64,6 +64,8 @@ function Home() {
   }, [defaultPageNum, defaultPageSize]);
  */
   const trailsToShow = trailsApiData.data?.map((trail) => {
+    console.log("TRAILS TO SHOW...");
+    console.log(trail);
     let chipColor;
 
     // console.log(trail);
